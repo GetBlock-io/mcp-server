@@ -1,0 +1,21 @@
+{
+    "mcpServers": {
+        "getblock": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "-e",
+                "ETH_ACCESS_TOKEN",
+                "-e",
+                "SOLANA_ACCESS_TOKEN",
+                "mcp/getblock:latest"
+            ],
+            "env": {
+                "ETH_ACCESS_TOKEN": "your_eth_access_token_here",
+                "SOLANA_ACCESS_TOKEN": "your_solana_access_token_here"
+            }
+        }
+    }
+} 
